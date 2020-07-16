@@ -1,0 +1,95 @@
+<!doctype>
+<html>
+
+<head>
+    <style>
+        .container {
+            background-color: powderblue;
+            height: 50px;
+            display: flex;
+        }
+
+        .item {
+            background-color: tomato;
+            color: white;
+            border: 1px solid white;
+
+        }
+
+
+        .grow {
+            display: -webkit-box;
+            /* iOS 6 이하, 사파리 3.1 */
+            display: -moz-box;
+            /* 파이어폭스 19 이하 */
+            display: -ms-flexbox;
+            /* IE 10 */
+            display: -webkit-flex;
+            /* 웹킷 구 버전 */
+            display: flex;
+            /* 표준 스펙 */
+        }
+
+        .grow .item {
+            flex-grow: 1;
+        }
+
+        .grow .item:nth-child(2) {
+            flex-grow: 4;
+        }
+
+        .basis .item {
+            flex-basis: 200px;
+        }
+
+        .basis .item:nth-child(2) {
+            flex-basis: 500px;
+        }
+
+        .shrink .item {
+            flex-grow: 1;
+        }
+
+        .shrink .item:nth-child(2) {
+            flex-basis: 500px;
+            flex-shrink: 1;
+        }
+
+        .shrink .item:nth-child(3) {
+            flex-basis: 400px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>항목의 너비를 늘이거나 줄이는 세가지 방법 grow/ shrink. basis </h1>
+    <h3>grow</h3>
+    <div class="container grow">
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+    </div>
+    <h3>basis</h3>
+    <div class="container basis">
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+    </div>
+    <h3>shrink</h3>
+    <div class="container shrink">
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+    </div>
+
+
+</body>
+
+</html>
