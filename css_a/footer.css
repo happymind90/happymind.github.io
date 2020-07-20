@@ -1,0 +1,257 @@
+.footer_wrap {
+  background-color: #f1f5f9;
+  width: 100%;
+  height: 0 auto;
+}
+
+
+.footer_endpage {
+  background-color: #1f2024;
+}
+
+.article_footer {
+  display: block;
+  width: 1200px;
+  height: 449px;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.addons_box_footer {
+  background-color: #f1f5f9;
+  display: block;
+  width: 1200px;
+  height: 54px;
+  position: absolute;
+}
+
+.add_ons_box {
+  display: block;
+  width: 69px;
+  height: 28px;
+  float: right;
+}
+
+.add_ons_box a {
+  text-align: center;
+  font-size: 8px;
+  margin: 8px;
+  padding: 3px 5px;
+}
+
+
+
+.add_ons_textbox {
+  display: block;
+  width: 1200px;
+  height: 394px;
+  position: absolute;
+  bottom: -395px;
+}
+
+.add_ons_textbox li {
+  list-style-type: square;
+  font-size: 13px;
+  padding: 8px 15px;
+  margin: 15px 50px;
+}
+
+.add_ons_box {
+  /* background-color: red; */
+  display: block;
+  width: 90px;
+  position: relative;
+  margin-top: 10px;
+  margin-right: 80px;
+}
+
+.add_ons_box a {
+  font-size: 14px;
+  color: #1f2024;
+}
+
+.add_ons_box a:before {
+  /* background-color: skyblue; */
+  content: '';
+  display: block;
+  width: 13px;
+  height: 13px;
+  right: 1px;
+  bottom: 1px;
+  position: absolute;
+  background: url('../img/icon_2.png') no-repeat;
+  margin-bottom: 10px;
+
+}
+
+.footer_info_box {
+  display: block;
+  width: 1200px;
+  height: 630px;
+  margin: 0 auto;
+  border: 1px solid red;
+
+}
+
+.service_info_box {
+  border: 1px solid red;
+  width: 25%;
+  height: 100px;
+  color: #fff;
+  margin: 0 auto;
+  float: left;
+  position: relative;
+  padding: 30px;
+}
+
+.service_info_box>p {
+  margin-bottom: 20px;
+  color: #878792;
+  font-size: 16px;
+}
+
+.service_info_box a {
+  color: #fff;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+
+/*introduce_box 메뉴*/
+
+.introduce_box {
+  border: 1px solid red;
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+.introduce_box a {
+  color: #fff;
+}
+
+.sony_information {
+  display: block;
+  width: 100%;
+  height: auto;
+  float: left;
+  color: #878792;
+  padding: 35px;
+  margin-top: 30px;
+}
+
+.information_box {
+  font-size: 12px;
+}
+
+.korea a {
+  border: 1px solid red;
+  display: block;
+  width: 172px;
+  height: 100%;
+  background-color: #504d56;
+  padding: 10px;
+  float: left;
+  margin-top: 100px;
+  position: relative;
+  font-size: 14px;
+  text-align: center;
+  margin-left: 35px;
+}
+
+.korea a::before {
+  border: 1px solid red;
+  width: 20px;
+  height: 16px;
+  background-image: url(../img/korea.jpg);
+  -webkit-background-size: 20px 16px;
+  background-size: 20px 16px;
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.korea a:hover {
+  background-color: #5865f5;
+  border: 1px solid #5d58f5;
+}
+
+.about_us_box {
+  float: right;
+  margin-top: 90px;
+}
+
+.about_us_box>li {
+  border: 1px solid red;
+  text-align: center;
+  margin-top: 10px;
+  float: left;
+}
+
+.about_us_icon a {
+  border: 1px solid red;
+  width: 30px;
+  float: right;
+}
+
+a.youtube {
+  border: 1px solid red;
+  display: block;
+  /* padding: 8px; */
+  background-color: #504d56;
+}
+
+a.youtube:hover {
+  background-color: #bb0000;
+  border: 1px solid#bb0000;
+
+}
+
+a.facebook {
+  border: 1px solid red;
+  display: block;
+  /* padding: 8px; */
+  background-color: #504d56;
+}
+
+a.facebook:hover {
+  background-color: #3b5998;
+  border: 1px solid#3b5998;
+}
+
+a.instagram {
+  border: 1px solid red;
+  display: block;
+  /* padding: 8px; */
+  background-color: #504d56;
+}
+
+a.instagram:hover {
+  background-color: #9933ff;
+  border: 1px solid#9933ff;
+}
+
+.sony_terms>li {
+  border: 1px solid red;
+  display: block;
+  float: left;
+}
+
+.sony_terms a {
+  margin-right: 10px;
+}
+
+.sony_terms_introduce a {
+  display: block;
+  color: #fff;
+}
+
+.sony_terms_security a {
+  color: #dc3a1a;
+  ;
+}
+
+a.point {
+  color: #fff;
+}

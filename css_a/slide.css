@@ -1,0 +1,94 @@
+/*main_slide_container 메뉴*/
+
+.slide_info_container {
+  /*border: 1px solid blue;*/
+  display: block;
+  width: 100%;
+  height: 90%;
+  margin-left: 3px;
+  padding: 10px;
+  margin-left: 330px;
+}
+
+.main_slide_container {
+  /* border: 1px solid blue; */
+  height: 530px;
+  margin-top: 98px;
+  overflow: hidden;
+}
+
+.main_slide_container>h2 {
+  /* background-color: red; */
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.slide_click_box {
+  /* border: 1px solid magenta; */
+  display: block;
+  width: 75px;
+  height: 20px;
+  position: relative;
+  margin: 0 auto;
+  top: -140px;
+}
+
+.slide_click_box a {
+  /* border: 1px solid magenta; */
+  display: block;
+  width: 8px;
+  height: 8px;
+  right: 50px;
+  float: left;
+  margin-right: 10px;
+}
+
+.clicka1 {
+  display: block;
+  background: url('../img/click.png') no-repeat;
+}
+
+.clicka2 {
+  display: block;
+  background: url('../img/click.png') no-repeat;
+}
+
+.clicka3 {
+  display: block;
+  background: url('../img/click.png') no-repeat;
+}
+
+.clicka4 {
+  display: block;
+  background: url('../img/click.png') no-repeat;
+}
+
+.clicka1:hover {
+  display: block;
+  background: url('../img/clicka.png') no-repeat;
+}
+
+.clicka2:hover {
+  display: block;
+  background: url('../img/clicka.png') no-repeat;
+}
+
+.clicka3:hover {
+  display: block;
+  background: url('../img/clicka.png') no-repeat;
+}
+
+.clicka4:hover {
+  display: block;
+  background: url('../img/clicka.png') no-repeat;
+}
+
+/* slide_info_box.bxSlider 메뉴 */
+
+.main_slide_container .bx-wrapper {
+  max-width: 100% !important;
+  border:none;
+  box-shadow: none;
+}
+.slide_info_box img {width:100%;}

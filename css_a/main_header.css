@@ -1,0 +1,246 @@
+#wrap {
+    min-width: 1600px;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 64px;
+    background-color: #000;
+}
+
+/*헤더 박스 레이아웃*/
+
+.header_wrap {
+    width: 1200px;
+    height: 64px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+
+
+/*로고영역*/
+
+h1.header_logo {
+    /* border: 1px solid blue; */
+    width: 160px;
+    height: 64px;
+    margin-left: 10px;
+    background-image: url(../img/sony_logo.gif);
+    float: left;
+    padding-bottom: 1px;
+
+}
+
+.header_logo a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.gnb_dropmenu_wrap,
+.gnb_dropmenu_store {
+    display: none;
+
+}
+
+nav {
+    /* border: 1px solid white; */
+    height: 100%;
+    display: inline-block;
+}
+
+
+.header_util {
+    float: right;
+    display: inline-block;
+    margin-top: 14px;
+}
+
+.header_util_list {
+    border: 1px solid red;
+    position: relative;
+    width: 100%;
+    left: -30px;
+}
+
+.header-util-item {
+    display: inline-block;
+}
+
+.header-util-item a {
+
+    color: #fff;
+}
+
+.like-box {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 10px;
+    left: -30px;
+
+}
+
+.search {
+    left: -20px;
+}
+
+a.like {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url('../img/like.png') no-repeat;
+}
+
+a.like:hover {
+
+    background: url('../img/like-ov.png') no-repeat;
+}
+
+.search a {
+    display: block;
+    width: 96px;
+    height: 36px;
+    font-size: 12px;
+    padding: 8px 12px 10px 15px;
+    background-color: #504d56;
+    border: 1px solid #504d56;
+    position: relative;
+}
+
+.search a:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url('../img/dot.png') no-repeat;
+    -webkit-background-size: 16px 16px;
+    background-size: 16px 16px;
+    background-position: 50% 50%;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.search a:hover {
+
+    background-color: #5d58f5;
+    border: 1px solid #5d58f5;
+
+}
+
+.header_wrap:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.site a {
+    display: block;
+    width: 96px;
+    height: 36px;
+    font-size: 12px;
+    padding: 8px 12px 10px 15px;
+    background-color: #2f353d;
+    border: 1px solid #2f353d;
+    position: relative;
+}
+
+.site a:before {
+    border: 1px solid red;
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url('../img/icon_1.png') no-repeat;
+    background-size: 16px 16px;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.site a:hover {
+    background-color: #504d56;
+    border: 1px solid #504d56;
+}
+
+a .electronic {
+
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url('../img/icon_1.png') no-repeat;
+    background-size: 16px 16px;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+/*gnb_dropmenu 메뉴*/
+
+
+.gnb_menu {
+    border: 1px solid red;
+    font-size: 0;
+    margin-top: 20px;}
+
+.gnb_menu_list {
+    border: 1px solid red;
+    display: inline-block;
+    float: left;}
+
+a.gnb_menu_item {
+    font-size: 15px;
+    color: #fff;
+    display: block;
+    padding: 0 20px;
+    border: 1px solid red;
+}
+
+.gnb_dropmenu_wrap>li:hover {
+    background-color: #fff;
+}
+
+/* .gnb_dropmenu_wrap {
+    width: 1100px;
+    background-color: #fff;
+    text-align: center;
+} */
+
+li.gnb_menu_list:hover .gnb_dropmenu_wrap {
+    display: block;
+    float: left;}
+
+.gnb_dropmenu_wrap>li {
+    display: inline-block;
+    width: 1000px;
+    font-size: 12px;
+    color: #5d58f5;
+}
+
+.gnb_dropmenu a {
+    border: 1px solid blue;
+    color: #61656A;
+    font-size: 8px;
+}
+
+.gnb_menu .gnb_dropmenu>li {
+    margin: 0 0 5px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.gnb_dropmenu_util {
+    width: 1000px;
+    height: 74px;
+}
