@@ -1,94 +1,446 @@
-<!doctype>
-<html>
+<!DOCTYPE html>
+<html lang="ko">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://kit.fontawesome.com/e545ec33c1.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
 
 <head>
-    <style>
-        .container {
-            background-color: powderblue;
-            height: 50px;
-            display: flex;
-        }
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css_a/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css_a/reset.css">
+    <link rel="stylesheet" type="text/css" href="css_a/common.css">
+    <link rel="stylesheet" type="text/css" href="css_a/main_header.css">
+    <link rel="stylesheet" type="text/css" href="css_a/slide.css">
+    <link rel="stylesheet" type="text/css" href="css_a/main_content.css">
+    <link rel="stylesheet" type="text/css" href="css_a/footer.css">
 
-        .item {
-            background-color: tomato;
-            color: white;
-            border: 1px solid white;
-
-        }
-
-
-        .grow {
-            display: -webkit-box;
-            /* iOS 6 이하, 사파리 3.1 */
-            display: -moz-box;
-            /* 파이어폭스 19 이하 */
-            display: -ms-flexbox;
-            /* IE 10 */
-            display: -webkit-flex;
-            /* 웹킷 구 버전 */
-            display: flex;
-            /* 표준 스펙 */
-        }
-
-        .grow .item {
-            flex-grow: 1;
-        }
-
-        .grow .item:nth-child(2) {
-            flex-grow: 4;
-        }
-
-        .basis .item {
-            flex-basis: 200px;
-        }
-
-        .basis .item:nth-child(2) {
-            flex-basis: 500px;
-        }
-
-        .shrink .item {
-            flex-grow: 1;
-        }
-
-        .shrink .item:nth-child(2) {
-            flex-basis: 500px;
-            flex-shrink: 1;
-        }
-
-        .shrink .item:nth-child(3) {
-            flex-basis: 400px;
-            flex-shrink: 0;
-        }
-    </style>
 </head>
 
-<body>
-    <h1>항목의 너비를 늘이거나 줄이는 세가 방법 grow/ shrink. basis </h1>
-    <h3>grow</h3>
-    <div class="container grow">
-        <div class="item">item-1</div>
-        <div class="item">item-2</div>
-        <div class="item">item-3</div>
-        <div class="item">item-4</div>
-        <div class="item">item-5</div>
-    </div>
-    <h3>basis</h3>
-    <div class="container basis">
-        <div class="item">item-1</div>
-        <div class="item">item-2</div>
-        <div class="item">item-3</div>
-        <div class="item">item-4</div>
-        <div class="item">item-5</div>
-    </div>
-    <h3>shrink</h3>
-    <div class="container shrink">
-        <div class="item">item-1</div>
-        <div class="item">item-2</div>
-        <div class="item">item-3</div>
-        <div class="item">item-4</div>
-        <div class="item">item-5</div>
-    </div>
 
+
+<body>
+    <div id="wrap">
+        <!--header-->
+        <header>
+            <div class="header_wrap">
+                <h1 class="header_logo"><a href="#"><span class="blind">SONY</span></a></h1>
+                <h2 class="blind">소니의 메인 메뉴</h2>
+                <nav>
+                    <ul class="gnb_menu">
+                        <li class="gnb_menu_list"><a href="#" class="gnb_menu_item">스토어</a></li>
+                        <li class="gnb_menu_list"><a href="#" class="gnb_menu_item">전자제품</a>
+                            <ul class="gnb_dropmenu_wrap">
+
+                                <li class="depth_blank"><a href="#" class="gnb_dropmenu_item"><strong>오디오</strong></a>
+
+                                    <ul class="gnb_dropmenu">
+                                        <li><a href="" class="gnb_dropmenu_item"><span class="depth">헤드폰</span></a></li>
+                                        <li><a href="" class="gnb_dropmenu_item"><span class="depth">MP3플레이어</span></a>
+                                        </li>
+                                        <li><a href="" class="gnb_dropmenu_item"><span class="depth">하이 레졸루션
+                                                    오디오</span></a></li>
+                                        <li><a href="" class="gnb_dropmenu_item"><span class="depth">무선 스피커</span></a>
+                                        </li>
+                                    </ul>
+
+                                <li class="depth_blank"><a href="#" class="gnb_dropmenu_item"><strong>모두보기</strong></a>
+                                </li>
+
+                                <li class="depth_blank"><a href="#" class="gnb_dropmenu_item"><strong>스토리지 및
+                                            케이블</strong></a>
+                                    <ul class="gnb_dropmenu">
+                                        <li><a href="" class="gnb_dropmenu_item"><span class="depth">메모리카드 및
+                                                    SSD</span></a></li>
+                                    </ul>
+
+                                <li class="depth_blank"><a href="#" class="gnb_dropmenu_item"><strong>모두보기</strong></a>
+                                </li>
+                        </li>
+
+                        <li class="depth_blank"><a href="#" class="gnb_dropmenu_item"><strong>카메라</strong></a>
+                            <ul class="gnb_dropmenu">
+                                <li><a href="" class="gnb_dropmenu_item"><span class="depth">렌즈 교환식 카메라</span></a>
+                                </li>
+                                <li><a href="" class="gnb_dropmenu_item"><span class="depth">렌즈</span></a></li>
+                                <li><a href="" class="gnb_dropmenu_item"><span class="depth">컴팩트 카메라</span></a></li>
+                            </ul>
+                        <li class="depth_blank"><a href="#" class="gnb_dropmenu_item"><strong>모두보기</strong></a></li>
+                        </li>
+
+                        <li class="depth_blank"><a href="#" class="gnb_dropmenu_item"><strong>비디오 카메라</strong></a>
+                            <ul class="gnb_dropmenu">
+                                <li><a href="" class="gnb_dropmenu_item"><span class="depth">캠코더</span></a></li>
+                                <li><a href="" class="gnb_dropmenu_item"><span class="depth">액션 카메라</span></a></li>
+                                <li><a href="" class="gnb_dropmenu_item"><span class="depth">프로패셔널 캠코더</span></a>
+                                </li>
+                            </ul>
+
+                        <li class="depth_blank"><a href="#" class="gnb_dropmenu_item"><strong>모두보기</strong></a></li>
+                        </li>
+
+                        <li class="depth_blank"><a href="#" class="gnb_dropmenu_item"><strong>카오디오</strong></a>
+                            <ul class="gnb_dropmenu">
+                                <li><a href="" class="gnb_dropmenu_item"><span class="depth">차량용 수신기 및 플레이어</span></a>
+                                </li>
+                                <li><a href="" class="gnb_dropmenu_item"><span class="depth">스피커 및 엠프</span></a>
+                                </li>
+                            </ul>
+
+                        <li class="depth_blank"><a href="#" class="gnb_dropmenu_item"><strong>모두보기</strong></a></li>
+                        </li>
+
+                        <ul class="gnb_dropmenu_util">
+                            <li class="gnb_dropmenu_item electronic"><a href="#">전체 전자제품</a></li>
+                            <li class="gnb_dropmenu_item expert"><a href="#">전문가용 제품보기</a></li>
+                        </ul>
+
+                        <div class="gnb_dropmenu_addlist">
+                            <ul>
+                                <li class="gnb_dropmenu_item electronic"><a href="#">소니img1</a></li>
+                                <dt>소니코리아</dt>
+                                <dd>About Sony, 소니코리아의 연혁, 사화공헌, 환경<br>
+                                    <br>
+                                    경영이야기</dd>
+                                <li class="gnb_dropmenu_item expert"><a href="#">소니img2</a></li>
+                                <dt>WF-1000XM3
+                                    <br>노이즈 컨설링을 몰입하다</dt>
+                            </ul>
+                        </div>
+
+                    </ul>
+                    <!--gnb_dropmenu_wrap-->
+                    </li>
+
+                    <li class="gnb_menu_list"><a href="#" class="gnb_menu_item">PlayStation®</a></li>
+                    <li class="gnb_menu_list"><a href="#" class="gnb_menu_item">엔터테인먼트</a>
+                        <ul class="gnb_dropmenu_wrap">
+                            <li><a href="" class="gnb_dropmenu_item"><span
+                                        class="depth">PlayStation®Store_img</span></a></li>
+                            <li><a href="" class="gnb_dropmenu_item"><span class="depth">플레이스테이션 공식 사이트_img</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--gnb_dropmenu_wrap-->
+                    <li class="gnb_menu_list"><a href="#" class="gnb_menu_item">제품지원</a></li>
+
+                    </ul>
+                    <!--gnb_menu_end-->
+                </nav>
+                <h2 class="blind">sony_Search</h2>
+                <div class="header_util">
+
+                    <ul class="header_util_list">
+                        <li class="header-util-item like-box"> <a href="#" class="like"><span
+                                    class="blind">heart</span></a></li>
+                        <li class="header-util-item search"><a href="#">Search</a></li>
+                        <li class="header-util-item site"> <a href="#">site</a></li>
+                    </ul>
+
+                </div>
+                <!--header_util-->
+
+            </div>
+            <!--header_wrap-->
+        </header>
+        <!--header_end-->
+        <container>
+
+            <div class="main_header_container">
+                <ul class="main_header_info">
+                    <p class="main_header_title">컴팩트 카메라 ZV-1</p>
+                    <p class="main_header_text">요즘 세대, 첫 번째 카메라</p>
+                    <li class="main_header_item"><a href="#">자세히보기</a></li>
+                </ul>
+            </div>
+            <!--main_header-->
+            <!-- slide-->
+
+            <div class="main_slide_container">
+                <h2>THE LATEST</h2>
+                <!-- <ul class="slide_info_container"> -->
+                    <!--<li class="main_slide_box list1">
+                        <a href="#" class="slide_info_box">
+                            <ul class="slide_text_box1">
+                                <li class="slide_text">WF-1000XM3<br></li>
+                                <li class="slide_title">몰입의 즐거움<br></li>
+                                <li class="slide_text">노이즈 캔슬링, 몰입의 수준이 다르다. 몰입의 깊이가 다르다.<br></li>
+                            </ul>
+                        </a>
+                    </li>-->
+
+                    <ul class="slide_info_box">
+                        <li><img src="img/list1.jpg"></li>
+                        <li><img src="img/list2.jpg"></li>
+                        <li><img src="img/list3.jpg"></li>
+                        <li><img src="img/list4.jpg"></li>
+                        <li><img src="img/list5.jpg"></li>
+                        <li><img src="img/list6.jpg"></li>
+                        <li><img src="img/list7.jpg"></li>
+                        <li><img src="img/list8.jpg"></li>
+                    </ul>
+
+                    <!-- <li class="main_slide_box list3">
+                        <a href="#" class="slide_info_box">
+                            <ul class="bxslider">
+                                <li class="slide_text">WF-XB700<br></li>
+                                <li class="slide_title">무엇을 하든 EXTRA<br></li>
+                                <li class="slide_title">BASS와 함께<br></li>
+                            </ul>
+                        </a>
+                    </li>
+
+                    <li class="main_slide_box list4">
+                        <a href="#" class="slide_info_box">
+                            <ul class="bxslider">
+                                <li class="slide_text">SEL1224GM<br></li>
+                                <li class="slide_title">G Master 초광각줌FE12-24mm F2.8GM</li>
+                            </ul>
+                        </a>
+                    </li> -->
+
+                    <script>
+                        $(document).ready(function () {
+                            $('.slide_info_box').bxSlider( {
+                                minSlides: 3,
+                                maxSlides: 3,
+                                slideWidth: 380,
+                                slideMargin: 20
+                            } );
+                        });
+
+                    
+                    </script>
+
+
+
+                <!-- </ul> -->
+                <!--<div>
+                    <ul class="slide_click_box">
+                        <li class="slide_click"><a href="#" class="clicka1"></a>
+                        </li>
+                        <li class="slide_click"><a href="#" class="clicka2"></a>
+                        </li>
+                        <li class="slide_click"><a href="#" class="clicka3"></a>
+                        </li>
+                        <li class="slide_click"><a href="#" class="clicka4"></a>
+                        </li>
+                    </ul>
+                </div>-->
+
+                <!--slide_info_container-->
+            </div>
+            <!--main_slide_container-->
+
+            <div class="hot_section">
+                <h2 class="hotsection_title">WHAT'S HOT</h2>
+                <div class="hot_info_section">
+                    <ul class="hot_product_box1">
+                        <li class="hotproduct_text">소니의 최신 제품<br></li>
+                        <li class="store_box"><a href="#"><strong>소니스토어바로가기</strong></a></li>
+                    </ul>
+
+                    <div class="hot_product_box2">
+                        <a href="#" class="hot_item_box">
+                            <ul class="hot_product_sbox2">
+                                <li class="hotitem_text1"><b>α7R Ⅳ61.0MP 35mm</b><b>풀프레임 <br>카메라</b><br></li>
+                                <li class="hotitem_text2">ILCE-7RM4<br></li>
+                                <li class="hotitem_text3"><b>4,299,000원¹</b><br></li>
+                            </ul>
+                        </a>
+                    </div>
+
+                    <div class="hot_product_box3">
+                        <a href="#" class="hot_item_box">
+                            <ul class="hot_product_sbox3">
+                                <li class="hotitem_text1"><b>WF-1000XM3 무선 노이즈 캔슬링</b><br></li>
+                                <li class="hotitem_text2">인이어 헤드폰<br></li>
+                                <li class="hotitem_text3">WI-1000XM2<br></li>
+                            </ul>
+                        </a>
+                    </div>
+
+                    <div class="hot_product_box4">
+                        <a href="#" class="hot_item_box">
+                            <ul class="hot_product_sbox4">
+                                <li class="hotitem_text1"><b>WF-1000XM3 무선 노이즈 캔슬링</b><br></li>
+                                <li class="hotitem_text2">헤드폰 WF-1000XM3<br></li>
+                                <li class="hotitem_text3">299,000원¹<br></li>
+                            </ul>
+                        </a>
+                    </div>
+
+                    <div class="hot_product_box5">
+                        <a href="#" class="hot_item_box">
+                            <ul class="hot_product_sbox5">
+                                <li class="hotitem_text1"><b>WH-CH710N 무선 노이즈 캔슬링</b><br></li>
+                                <li class="hotitem_text2">헤드폰<br></li>
+                                <li class="hotitem_text3">WH-CH710N<br></li>
+                            </ul>
+                        </a>
+                    </div>
+
+                    <div class="hot_product_box6">
+                        <a href="#" class="hot_item_box">
+                            <ul class="hot_product_sbox6">
+                                <li class="hotitem_text1"><b>컴팩트 카메라 ZV-1</b><br></li>
+                                <li class="hotitem_text2">ZV-1<br></li>
+                            </ul>
+                            <div class="new_click">신제품<br></div>
+                        </a>
+                    </div>
+
+                </div>
+                <!--new_info_section-->
+
+                <!--new_section-->
+
+                <div class="new_section">
+                    <h2 class="newsection_title">LATEST NEWS</h2>
+                    <div class="new_info_section">
+                        <ul class="new_product_box1">
+                            <li class="new_product_textbox">
+                                <p>제품 프로모션/이벤트</p>
+                                <a href="#" class="sony_store"><span>소니스토어 바로가기</span></a>
+                            </li>
+                        </ul>
+
+                        <ul class="new_product_box2">
+                            <li class="new_product_textbox">
+                                <p>소니코리아 보도자료</p>
+                                <a href="#" class="sony_store"><span>소니스토어 뉴스룸</span></a>
+                            </li>
+                        </ul>
+
+                        <ul class="new_product_box3">
+                            <li class="new_product_textbox">
+                                <p>About Sony, 소니코리아 연혁,<br>사회공헌, 환경 경영 이야기</p>
+                                <a href="#" class="sony_store"><span>소니코리아 소개</span></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!--new_info_section-->
+
+                </div>
+                <!--new_section-->
+            </div>
+    </div>
+    <!--container-->
+    </container>
+
+    <footer>
+        <div class="footer_wrap">
+            <div class="article_footer">
+                <div class="addons_box_footer">
+                    <ul class="add_ons_box">
+                        <li><a href="#" class="add_ons">부가기능</a></li>
+                    </ul>
+                    <ol type="1" class="add_ons_textbox">
+                        <li>EXTRA BASS는 소니의 상표입니다</li>
+                        <li>판매가격은 사전공지 없이 변경될 수 있습니다</li>
+                        <li>제품의 색상 및 치수는 실제와 다를 수 있습니다</li>
+                        <li>표시된 제품 컬러 및 기능은 모델 및 국가에 따라 달라질 수 있습니다</li>
+                        <li>4K: 3,840 x 2,160픽셀</li>
+                        <li>거주하는 국가 또는 지역에 따라 사용할 수 없는 기능이 있습니다.
+                            제품에 설치되거나 제품을 통해 액세스할 수있는 소프트웨어/서비스의 일부 또는 전부는 사전 통보없이 변경, 중단,<br>
+                            제거, 일시 중단 또는 해지될 수 있습니다</li>
+                        <li>기능이나 사양은 사전 고지 없이 변경될 수 있습니다</li>
+                    </ol>
+                </div>
+                <!--addons_box_footer-->
+
+            </div>
+            <!--article_footer-->
+            <div class="footer_endpage">
+                <div class="footer_info_box">
+                    <div>
+                        <ul class="service_info_box">
+                            <p>매장찾기</p>
+                            <li class="guidance"><a href="#">직영점 안내</a></li>
+                        </ul>
+
+                        <ul class="service_info_box">
+                            <p>고객지원</p>
+                            <li class="guidance"><a href="#">소니코리아 고객지원</a></li>
+                            <li class="guidance"><a href="#">소니스토어 고객지원</a></li>
+                            <li class="guidance"><a href="#">방송/업무용 솔루션 고객지원</a></li>
+                        </ul>
+
+                        <ul class="service_info_box">
+                            <p>제품정보</p>
+                            <li class="guidance"><a href="#">소비자 가전</a></li>
+                            <li class="guidance"><a href="#">전문가용 제품 및 솔루션</a></li>
+                            <li class="guidance"><a href="#">전자부품</a></li>
+                        </ul>
+
+                        <ul class="service_info_box">
+                            <p>뉴스 및 정보</p>
+                            <li class="guidance"><a href="#">뉴스/보도자료</a></li>
+                            <li class="guidance"><a href="#">Investor Relations</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="introduce_box">
+                        <ul class="about_us">
+                            <li class="about_us_country korea"><a href="#">대한민국</a></li>
+                            <ul class="about_us_box">
+                                <li><a href="#"><span>회사소개</span></a></li>
+                                <li><a href="#"><span>환경경영</span></a></li>
+                                <li><a href="#"><span>사회공헌</span></a></li>
+                                <li class="about_us_icon"><a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="about_us_icon"><a href="#" class="facebook"><i
+                                            class="fab fa-facebook-f"></i></a></li>
+                                <li class="about_us_icon"><a href="#" class="instagram"><i
+                                            class="fab fa-instagram-square"></i></a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <!--introduce_box-->
+
+                    <div class="sony_information">
+                        <hr width="100%">
+                        <ul class="information_box">
+                            <il>COPYRIGHT © 2019. SONY KOREA CORPORATION. ALL RIGHTS RESERVED.</il>
+                            <ul class="sony_terms">
+                                <li class="sony_terms_introduce"><a href="#">이용약관</a></li>
+                                <li class="sony_terms_security"><a href="#">개인정보취급방침</a></li>
+                                <li class="sony_terms_introduce"><a href="#">이메일주소무단수집거부</a></li>
+                                <li class="sony_terms_introduce"><a href="#">SSL보안인증</a></li>
+                            </ul>
+                            <!--sony_terms-->
+                            <br>
+                            <il><br>사업장주소 :서울특별시 영등포구 국제금융로 10 원아이에프씨 24F<br>
+                                사업자등록번호 :106-81-23810
+                                통신판매번호 2012-서울영등포-1038 소니코리아 (주)<br>
+                                대표이사 : Okura Kikuo | 개인정보관리책임자 : Okura Kikuo<br>
+                                본 사이트의 컨텐츠는 저작권법의 보호를 받는 바,<br>
+                                상업적 목적의 무단전재, 복사, 배포 등을 금합니다.<br>
+                            </il>
+                            <il>TEL : 소니코리아 고객지원센터 1588-0911 E-MAIL : <a href="#" class="point">cshelp@sony.co.kr</a>
+                            </il>
+
+                        </ul>
+                        <!--sony_terms_box-->
+
+                    </div>
+                    <!--sony_terms-->
+
+                </div>
+                <!--footer_endpage-->
+            </div>
+            <!--footer wrap-->
+
+        </div>
+        <!--footer_info_box-->
+    </footer>
+    <!--footer-->
 
 </body>
 
