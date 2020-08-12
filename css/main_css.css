@@ -699,9 +699,9 @@ table {
 	width: 25px;
 	height: 23px;
 	/*백그라운 이미지 선언 */
-	background: url('../img/sprite.png') no-repeat;
+	/*background: url('../img/sprite.png') no-repeat;
 	background-size: 474px 1250px;
-	-webkit-background-size: 474px 1250px;
+	-webkit-background-size: 474px 1250px;*/
 	/*백그라운드 위치 값 */
 	background-position: -199px -129px;
 }
