@@ -1,20 +1,10 @@
 /*main_slide_container 메뉴*/
 
-.slide_info_container {
-  /*border: 1px solid blue;*/
-  display: block;
-  width: 100%;
-  height: 90%;
-  margin-left: 3px;
-  padding: 10px;
-  margin-left: 330px;
-}
-
 .main_slide_container {
   /* border: 1px solid blue; */
-  height: 530px;
   margin-top: 98px;
   overflow: hidden;
+  margin-top: 30px;
 }
 
 .main_slide_container>h2 {
@@ -24,71 +14,42 @@
   margin: 0 auto;
 }
 
-.slide_click_box {
-  /* border: 1px solid magenta; */
-  display: block;
-  width: 75px;
-  height: 20px;
-  position: relative;
-  margin: 0 auto;
-  top: -140px;
-}
-
-.slide_click_box a {
-  /* border: 1px solid magenta; */
-  display: block;
-  width: 8px;
-  height: 8px;
-  right: 50px;
-  float: left;
-  margin-right: 10px;
-}
-
-.clicka1 {
-  display: block;
-  background: url('../img/click.png') no-repeat;
-}
-
-.clicka2 {
-  display: block;
-  background: url('../img/click.png') no-repeat;
-}
-
-.clicka3 {
-  display: block;
-  background: url('../img/click.png') no-repeat;
-}
-
-.clicka4 {
-  display: block;
-  background: url('../img/click.png') no-repeat;
-}
-
-.clicka1:hover {
-  display: block;
-  background: url('../img/clicka.png') no-repeat;
-}
-
-.clicka2:hover {
-  display: block;
-  background: url('../img/clicka.png') no-repeat;
-}
-
-.clicka3:hover {
-  display: block;
-  background: url('../img/clicka.png') no-repeat;
-}
-
-.clicka4:hover {
-  display: block;
-  background: url('../img/clicka.png') no-repeat;
-}
-
 /* slide_info_box.bxSlider 메뉴 */
-
 .main_slide_container .bx-wrapper {
   max-width: 100% !important;
-  border:none;
+  border: none;
   box-shadow: none;
 }
-.slide_info_box img {width:100%;}
+
+.slide_info_box img {
+  width: 100%;
+  /* border: 1px solid blue; */
+  display: block;
+}
+.slide_info_box>li {
+  position: relative;
+}
+.slide_info_box>li>div {
+  position: absolute;
+  /* border: solid 1px red; */
+  background-color: #2f353d;
+  width: 380px;
+  padding: 10px;
+  bottom:0;
+  left:0;
+  height:136px;
+}
+
+.slide_info_box>li>div>dt {
+  color: #fff;
+  font-size: 12px;
+  padding: 10px;
+  margin-left: 40px;
+}
+
+.slide_info_box>li>div>dd {
+  color: #fff;
+  font-size: 24px;
+  padding: 3px;
+  margin-left: 40px;
+}

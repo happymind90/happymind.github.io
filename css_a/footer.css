@@ -90,12 +90,12 @@
   width: 1200px;
   height: 630px;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
 }
 
 .service_info_box {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 25%;
   height: 100px;
   color: #fff;
@@ -121,7 +121,7 @@
 /*introduce_box 메뉴*/
 
 .introduce_box {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: block;
   width: 100%;
   float: left;
@@ -146,7 +146,7 @@
 }
 
 .korea a {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: block;
   width: 172px;
   height: 100%;
@@ -161,7 +161,7 @@
 }
 
 .korea a::before {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 20px;
   height: 16px;
   background-image: url(../img/korea.jpg);
@@ -183,20 +183,20 @@
 }
 
 .about_us_box>li {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-align: center;
   margin-top: 10px;
   float: left;
 }
 
 .about_us_icon a {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 30px;
   float: right;
 }
 
 a.youtube {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: block;
   /* padding: 8px; */
   background-color: #504d56;
@@ -209,7 +209,7 @@ a.youtube:hover {
 }
 
 a.facebook {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: block;
   /* padding: 8px; */
   background-color: #504d56;
@@ -221,7 +221,7 @@ a.facebook:hover {
 }
 
 a.instagram {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: block;
   /* padding: 8px; */
   background-color: #504d56;
@@ -233,7 +233,7 @@ a.instagram:hover {
 }
 
 .sony_terms>li {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: block;
   float: left;
 }
