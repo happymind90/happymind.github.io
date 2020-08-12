@@ -689,23 +689,6 @@ table {
 	-webkit-transition: bottom 0.3s;
 }
 
-.thumbnail_dimmed dl:before {
-	content: '';
-	/*위치 */
-	position: absolute;
-	top: 0;
-	left: 30px;
-	/*공간-사이즈 */
-	width: 25px;
-	height: 23px;
-	/*백그라운 이미지 선언 */
-	/*background: url('../img/sprite.png') no-repeat;
-	background-size: 474px 1250px;
-	-webkit-background-size: 474px 1250px;*/
-	/*백그라운드 위치 값 */
-	background-position: -199px -129px;
-}
-
 /*hover style---opcity */
 
 .thumbnail_dimmed:focus {
